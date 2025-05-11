@@ -1,0 +1,19 @@
+/* 自定义消息样式 */
+.custom-message {
+  min-width: auto !important;
+  padding: 8px 12px !important;
+  top: 20px !important;
+  z-index: 9999 !important;
+}
+
+.custom-message .el-message__icon {
+  display: none !important;
+}
+
+.custom-message .el-message__content {
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  padding: 0 !important;
+}
+
+/* 其他全局样式 */
