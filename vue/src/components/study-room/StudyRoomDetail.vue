@@ -193,9 +193,11 @@ const isTimeInRange = (current, start, end) => {
 // 获取状态文本
 const getStatusText = (status) => {
   const statusMap = {
-    active: '正常开放',
-    inactive: '暂停使用',
-    closed: '已关闭'
+    'AVAILABLE': '正常开放',
+    'MAINTENANCE': '暂停使用',
+    'CLOSED': '已关闭',
+    'FULL': '已满',
+    'UNAVAILABLE': '不可用'
   }
   return statusMap[status] || '未知状态'
 }
@@ -311,17 +313,17 @@ const roomImageUrl = computed(() => {
   font-size: 14px;
 }
 
-.status-tag.active {
+.status-tag.AVAILABLE {
   background-color: #e6f7ff;
   color: #1890ff;
 }
 
-.status-tag.inactive {
+.status-tag.UNAVAILABLE {
   background-color: #fff7e6;
   color: #fa8c16;
 }
 
-.status-tag.closed {
+.status-tag.CLOSED {
   background-color: #f5f5f5;
   color: #999;
 }

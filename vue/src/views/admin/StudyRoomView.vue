@@ -387,17 +387,17 @@ onMounted(() => {
   margin-top: 6px;
 }
 
-.status-tag.active {
+.status-tag.AVAILABLE {
   background-color: #e6f7ff;
   color: #1890ff;
 }
 
-.status-tag.inactive {
+.status-tag.UNAVAILABLE {
   background-color: #fff7e6;
   color: #fa8c16;
 }
 
-.status-tag.closed {
+.status-tag.CLOSED {
   background-color: #f5f5f5;
   color: #999;
 }

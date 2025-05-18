@@ -55,7 +55,7 @@ export const reservationStatus = {
     type: 'info'
   },
   CONFIRMED: {
-    text: '待使用',
+    text: '已结束',
     type: 'info'
   },
   CHECKED_IN: {
